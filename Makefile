@@ -113,6 +113,8 @@ export quiet Q KBUILD_VERBOSE
 # The O= assignment takes precedence over the KBUILD_OUTPUT environment
 # variable.
 
+KBUILD_OUTPUT := out
+
 # KBUILD_SRC is set on invocation of make in OBJ directory
 # KBUILD_SRC is not intended to be used by the regular user (for now)
 ifeq ($(KBUILD_SRC),)
