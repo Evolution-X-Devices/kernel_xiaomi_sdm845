@@ -25,8 +25,8 @@ cc32-ldoption = $(call try-run,\
 # arm64 one.
 # As a result we set our own flags here.
 
-# KBUILD_CPPFLAGS and NOSTDINC_FLAGS from top-level Makefile
-VDSO_CPPFLAGS := -D__KERNEL__ -nostdinc
+# KBUILD_CPPFLAGS from top-level Makefile
+VDSO_CPPFLAGS := -D__KERNEL__
 VDSO_CPPFLAGS += -isystem $(shell $(CC_ARM32) -print-file-name=include 2>/dev/null)
 VDSO_CPPFLAGS += $(LINUXINCLUDE)
 
